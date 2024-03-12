@@ -1,0 +1,125 @@
+<form>
+    <!-- form elements go here -->
+
+    <!-- text input form -->
+    <label for="name"> Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <!-- password -->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+
+    <!-- radio button(select one option from a list) -->
+    <label>Choose Your Preferred Payment Method:</label>
+    <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+    <label for="creditCard">credit Card</label><br>
+
+    <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+    <label for="creditCard">Paypal</label><br>
+
+    <input type="radio" id="Mpesa" name="paymentMethod" value="Mpesa">
+    <label for="creditCard">Mpesa</label><br>
+
+    <input type="radio" id="bitcoin" name="paymentMethod" value="bitcoin">
+    <label for="creditCard">Bitcoin</label><br>
+
+    <!-- checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label>
+
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="reading" name="interest" value="reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="gaming" name="interest" value="gaming">
+    <label for="gaming">Gaming</label>
+
+    <!-- submit button -->
+    <button type="submit">Submit</button>
+
+    <!-- ARIA (accesible rich internet applications = roles and attributes to enhance the accessibility of web content) -->
+    <label for="password">Password:</label>
+    <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        aria-describeby="password-hint"
+    />
+    <div id="password-hint">
+        Pasword must be at least 8 characters long
+    </div>
+    <!-- field set and legend = group of related fields -->
+    <fieldset>
+        <legend>Address information</legend>
+    </fieldset>
+
+
+</form>
+
+<!-- compiling the above form fetures -->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+
+    <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><button type="submit">Submit</button>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Interests:</legend>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="sports" name="interest" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="gaming" name="interest" value="gaming">
+        <label for="gaming">Gaming</label>
+        
+    </fieldset>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<!-- other form features -->
+<!-- action= url where the form should be sent -->
+
+<!-- method = how data is sent to the server-->
+<form action="/submit-form" method="POST">
+    <!-- form fields go here -->
+    <button type="submit">Submit</button>
+</form>
+
+<!-- drop down list-->
+<select>
+    <option value="value1">Option 1</option>
+    <option value="value2">Option 2</option>
+    <option value="value3">Option 3</option>
+    <!-- Additional options go here -->
+  </select>
+
+  <!-- upload a file-->
+  <input type="file">

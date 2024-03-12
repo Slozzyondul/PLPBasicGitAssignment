@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Registration</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="/register" method="POST">
+       <fieldset>
+        <h2><legend>Students:</legend></h2>
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="name">Last Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Prefer not to say</label><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="telephone">Telephone:</label><br>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="course">Course:</label><br>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Mathematics">Dart</option>
+            <option value="Science">Python</option>
+            <option value="English">Web Tecnologies</option>
+            <option value="English">Databases</option>
+            <option value="English">Software Engineering</option>
+            
+        </select><br><br>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+
+       </fieldset>
+
+       <fieldset>
+        <h2><legend>Tutors:</legend></h2>
+        <label for="name">First Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="name">Last Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Prefer not to say</label><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="telephone">Telephone:</label><br>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="course">Course to teach:</label><br>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Mathematics">Dart</option>
+            <option value="Science">Python</option>
+            <option value="English">Web Tecnologies</option>
+            <option value="English">Databases</option>
+            <option value="English">Software Engineering</option>
+            
+        </select><br><br>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+       </fieldset>
+  
+    </form>
+</body>
+
+</html>
