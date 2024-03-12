@@ -1,0 +1,27 @@
+p {
+  color: red;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+li {
+  color: blue;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+div {
+  color: green;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#paragraph {
+  color: purple;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+.container {
+  color: orange;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
