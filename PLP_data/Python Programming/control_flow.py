@@ -1,3 +1,4 @@
+'''
 #decision making statements (the IF Statements)
 marks = int(input("Enter marks"))
 result = ""
@@ -23,6 +24,7 @@ def checkVowel(n):
 
 print(checkVowel('a')) 
 print(checkVowel('a'))   
+'''
 
 #assignment
 '''1. write a simple python programme that can rate students performance as follows;
@@ -37,3 +39,54 @@ print(checkVowel('a'))
 	multiplication
 	division
 	subtraction'''
+'''
+#for loop in range
+welcome = "Karibu PLP"
+for i in range(5):
+    print(welcome)
+
+'''
+
+'''
+#for loop
+colors = ["blue", "green", "white","yellow", "brown", "cream"]
+color_i_want = "white"
+
+for color in colors:
+    if color == color_i_want:
+        print("They have the color i want")
+        break
+    print(color)
+'''
+
+'''
+#while loop
+colors1 = ["blue", "green", "white", "yellow", "brown", "cream"]
+decision_color= "cream"
+length = len(colors1)
+count = 0
+
+while count < length:
+    print(colors1[count])
+
+    if colors1[count] == decision_color:
+        print("your color is in the store")
+        break
+    count += 1
+'''
+
+'''
+#nested loops
+groups = [["paul","solo"], ["ahmed","abdi"],["ali","osama"]]
+for group in groups:
+    for name in group:
+        print(name)
+'''
+
+#list comprehensions
+nums = [4,5,6,7,-3,-3,4]
+doubled = []
+
+for num in nums:
+    doubled.append(num * 2)
+print(doubled)
