@@ -85,5 +85,3 @@ void main() {
 }
 */
 
-//build a program that prints odd and even numbers (using if else statement)
-
