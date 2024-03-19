@@ -1,0 +1,196 @@
+@import url('utilities.css');
+:root{
+  --primary: rgb(186, 211, 73);
+  --bgDark: rgb(110, 88, 88);
+  --white: rgb(25, 130, 138);
+  --secondary: rgb(0, 59, 50);
+  --bgLight: rgb(196, 80, 190);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background-color: var(--primary);
+  clip-path: polygon(0 30, 10 100%, 100% 100%, 10 100%);
+}
+
+header nav .left a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+header nav .left a:hover {
+  color: var(--bgDark);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .logo {
+  margin: 3rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.hero .left img {
+  width: 400px;
+}
+
+.hero .right {
+  color: var(--bgDark);
+  margin-top: -7rem;
+}
+
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--bgDark);
+  margin-bottom: 0.5rem;
+}
+
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+  color: var(--bgDark);
+}
+
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 6rem;
+}
+
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+section.about h1 span {
+  color: var(--bgDark);
+}
+
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: var(--bgDark);
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+section.about .socials {
+  display: flex;
+}
+
+section.about .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+
+section.about .socials a:hover {
+  background: var(--primary);
+}
+
+section.services {
+  background-color: rgb(209, 183, 35);
+  color: rgb(177, 164, 164);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5rem;
+  color: var(--white);
+}
+
+.services-head + p {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  font-weight: 900;
+}
+
+.card img {
+  width: 50px;
+  background: rgb(214, 206, 206);
+}
+
+section.services .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+section.services .card-grid .card {
+  background: var(--bgDark);
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+section.services .card-grid .card img {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary);
+}
+
+section.services .card-grid .card h2 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-grid .card p {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+section.services .card-grid .card:hover {
+  background: var(--bgLight);
+}
+
+section.services .card-grid .card:hover h2 {
+  color: var(--bgDark);
+}
+
+section.services .card-grid .card:hover p {
+  color: var(--primary);
+}
