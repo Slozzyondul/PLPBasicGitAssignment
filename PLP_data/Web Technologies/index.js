@@ -16,13 +16,6 @@ console.log(34);
 console.log(192318);
 console.log(98078943843879846987485384563487857435687437658743674832);
 
-//exercise #1
-//Try to print your name, age, and occupation on the console.
-console.log("solomon ondula"); 
-console.log(27);
-console.log("engineer");
-
-
 /*
 //javascript variables
 let message = "hello amazing world!"
@@ -49,21 +42,6 @@ const Max_speed = 1024
 if(true) {
     let name = "solo";
     console.log(name)
-}
-
-//exercise #2
-//Write a program with three variables, each with the following value:
-//The first variable contains your name
-//The second variable contains your age
-//The third variable contains your occupation
-
-if(true) {
-    let name = "soloo";
-    let age = 27;
-    let occupation = "engineer";
-    console.log(name);
-    console.log(age);
-    console.log(occupation);
 }
 
 //data types = specifications about what you can and cant do eith data(strings, numbers, booleans, null, undefined)
@@ -141,12 +119,5 @@ console.log(!true);
 //typedef operator = check the data type 
 console.log(typeof true);
 
-//exercise 3
-console.log(19%4);
-console.log(10==3);
-console.log(10 !== 10);
-console.log(2 < "10");
-console.log("5" > 2);
-console.log((false&&true)||false);
 */
 

@@ -24,25 +24,3 @@ if(true) {
     console.log(bird.length);
 }
 
-//exercise 4
-
-let colors = ['red', 'green', 'blue'];
-colors.push('black');
-console.log(colors);
-
-// Find the index of 'red'
-let removedElement = colors.indexOf('red');
-// Check if 'red' exists in the array before removing
-if (removedElement !== -1) {
-    colors.splice(removedElement, 1);
-}
-//console.log(colors);
-
-//swap green and blue
-let index1 = colors.indexOf('green'); //index of green
-let index2 = colors.indexOf('blue'); //index of blue
-[colors[index1], colors[index2]] = [colors[index2], colors[index1]];
-console.log(colors);
-//adding yellow to to the start of the list
-colors.unshift('yellow');
-console.log(colors);
