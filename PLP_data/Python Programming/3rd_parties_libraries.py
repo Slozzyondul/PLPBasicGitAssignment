@@ -25,6 +25,11 @@ cryptography
 pylint, flake8, pep8
 pymongo, redis, MySQL-Python, psycopg2
 '''
+#redshift and s3 = data warehousing and storage services respectively
+#bigquery = used with RESTful APIs
+#pyspark = large scale data processing and distributed datasets
+#kafka = publish-subscribe messaging system
+#pydoop = handling hadoop distributed file systems.
 
 #python libraries
 #django, cherrypy, pyramid, grok, turbogears, web2py, flask, bottle, tornade, bluebream, quixote
@@ -38,4 +43,22 @@ pymongo, redis, MySQL-Python, psycopg2
 #pygame = used for developing video games using computer graphics and audio libraries along with Python programming language
 #pytorch =  solve application issues related to neural networks.
 #pybrain = It provides fast and easy-to-use algorithms for machine learning tasks
-#
+#module = defining the most repeated code and import the module when needed
+
+
+#creating a python addition module
+def add (a,b):
+    result = a + b
+    return result
+
+#manipulating builtin library (math)
+import math as m
+y = m.sqrt(25)
+print(y)
+
+#importing a specific name from a module
+from math import pi 
+print(pi)
+#importing all names from a module 
+from math import *
+print(sqrt)
