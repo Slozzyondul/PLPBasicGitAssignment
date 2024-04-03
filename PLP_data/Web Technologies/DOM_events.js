@@ -20,4 +20,25 @@ When a form is submitted, do a POST request using the Fetch API.
 
 //we attach an event listener to a button
 //first specify the type of event to listen to, which is a click event in this case
-//
+
+/*
+The most common mouse events that you can track are:
+
+mousedown – the mouse button was pressed
+mouseup – the mouse button was released
+click – a click event
+dblclick – a double click event
+mousemove – when the mouse is moved over the element
+contextmenu – when the context menu is opened, for example on a right mouse button click
+*/
+
+//How to Remove Event Listeners = button.removeEventListener('click', newtext);
+//addEventListener() method also allows you to attach multiple listeners to the same element
+
+//event-driven programming = pattern of using event listeners to do specific tasks
+
+/*
+There are two ways you can listen to events: 
+using the addEventListener() JavaScript method and 
+the on[eventname] HTML attributes
+*/

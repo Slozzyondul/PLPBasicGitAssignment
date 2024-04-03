@@ -7,16 +7,62 @@
     </head>
     <body>
         <p id="myParagraph">some content and passsages including tables can go here based on user preference</p>
-        <button id="changeText">next page</button>
+        <button onclick="handleClick()" id="changeText">next page</button>
+        <button id="myBtn">click me!</button>
         <script>
             const button = document.querySelector('#changeText');
 
             function newText(event) {
                 const p = document.querySelector('#myParagraph');
                 p.innerText = 'this is an alternative page or let me put it simply it is a continuation of the intital page'
-                console.log(event);  //log the event to the console to see details
+                console.log(event);  //log the event to the console to see details                  
             }
-            button.addEventListener('click', newText);                
+
+            //keyboard events
+            function logKeyDown(event) {
+                console.log(`this key was pressed: ${event.key}`);
+            }
+            function logKeyUp(event) {
+                console.log(`this key was released: ${event.key}`);
+            }
+
+            //mouse events
+            function mouseDown(event) {
+                console.log(`the mouse is clicked: ${event.key}`);
+            }
+            function mouseUp(event) {
+                console.log(`the mouse is released: ${event.key}`);
+            }
+
+            button.addEventListener('click', newText); 
+                 
+            document.addEventListener('keydown', logKeyDown);
+            document.addEventListener('keyup', logKeyUp);    
+
+            document.addEventListener('mousedown', mouseDown);
+            document.addEventListener('mouseup', mouseUp);
+
+            //Listen to Events using HTML Attributes
+            function handleClick(event) {
+                alert('the button "next page" was clicked')
+            }
+
+            //listening to the click event using the onclick html attribute
+            const myBtn = document.querySelector('#myBtn');
+
+
+            //multiple listeners to the same element
+            myBtn.addEventListener('click', handleClick);
+            myBtn.addEventListener('click', handleClickTwo);
+
+            //myBtn.onclick = handleClick; 
+            function handleClick() {
+                alert('the button "click me!" was clicked');
+                console.log('run from handle click one function');
+            }
+            function handleClickTwo() {
+                console.log('run from handle click 2 function');
+            }
         </script>
     </body>
 
