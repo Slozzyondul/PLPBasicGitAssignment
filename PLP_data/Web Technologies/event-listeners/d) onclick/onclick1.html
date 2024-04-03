@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onclick</title>
+  </head>
+  <body>
+    <h1>Onclick</h1>
+
+    <button id="myBtn">Click Me!</button>
+
+    <script>
+      // You can also add the onclick attribute using JavaScript as follows:
+      const myBtn = document.querySelector('#myBtn');
+      myBtn.onclick = handleClick;
+
+      function handleClick(event) {
+        alert('The button is clicked');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dom_events</title>
+    </head>
+    <body>
+        <p id="myParagraph">some content and passsages including tables can go here based on user preference</p>
+        <button id="changeText">next page</button>
+        <script>
+            const button = document.querySelector('#changeText');
+
+            function newText(event) {
+                const p = document.querySelector('#myParagraph');
+                p.innerText = 'this is an alternative page or let me put it simply it is a continuation of the intital page'
+                console.log(event);  //log the event to the console to see details
+            }
+            button.addEventListener('click', newText);                
+        </script>
+    </body>
+
+</html>

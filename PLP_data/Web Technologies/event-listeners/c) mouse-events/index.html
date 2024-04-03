@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse events</title>
+  </head>
+  <body>
+    <h1>Mouse events</h1>
+    <script>
+      document.addEventListener('mousedown', (event) => {
+        console.log('The mouse is pressed');
+      });
+      document.addEventListener('mouseup', (event) => {
+        console.log('The mouse is released');
+      });
+    </script>
+  </body>
+</html>
