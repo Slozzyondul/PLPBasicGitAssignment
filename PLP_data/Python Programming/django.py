@@ -6,3 +6,5 @@
 #Object Relational Mapping (ORM) = deliveryof data in databases
 #Class Based Views (CBV).
 
+#pip freeze = used to view libraries
+#pip freeze > requirements.txt to install available libraries listed in the requirements.txt file
