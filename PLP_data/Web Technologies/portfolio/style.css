@@ -2,21 +2,21 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--color-default);
+  color: var(--color-default); /* Assuming this is defined elsewhere */
   background-color: #cec2c2;
 }
 
 header {
   background-color: #333;
-  color: #534f4f;
-  padding: 20px;
+  color: #fff; /* Improved contrast for white text */
+  padding: 1.5rem; /* Use rem for responsive padding */
   transition: all 0.5s;
   z-index: 997;
 }
 
 header h1 {
   margin: 0;
-  font-size: 22px;
+  font-size: 1.5rem; /* Use rem for responsive font size */
 }
 
 nav {
@@ -25,7 +25,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #f8f8f8;
-  /*position: fixed;*/
 }
 
 nav ul {
@@ -36,7 +35,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 20px;
+  margin: 0 1rem; /* Use rem for responsive margin */
 }
 
 nav a {
@@ -47,21 +46,33 @@ nav a {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.5rem; /* Use rem for responsive padding */
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem; /* Use rem for responsive margin */
 }
 
 h2 {
-  margin: 0 0 20px 0;
-  font-size: 22px;
+  margin: 0 0 1.5rem 0; /* Use rem for responsive margin */
+  font-size: 1.5rem; /* Use rem for responsive font size */
 }
 
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 1rem; /* Use rem for responsive padding */
   text-align: center;
+}
+
+/* Media Queries for Additional Breakpoints (optional) */
+
+@media only screen and (max-width: 480px) {
+  /* Styles for even smaller screens */
+  header h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 }

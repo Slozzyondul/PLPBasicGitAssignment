@@ -1,0 +1,11 @@
+{
+    "name": "solomon_portfolio",
+    "version": "1.0.0",
+    "description": "This is my first personal website portfolio build  using html and css only",
+    "main": "index.html",  
+    "scripts": {
+      
+    },
+    "dependencies": {}  
+  }
+  

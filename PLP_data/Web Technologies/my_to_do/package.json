@@ -1,0 +1,11 @@
+{
+    "name": "solomon_portfolio",
+    "version": "1.0.0",
+    "description": "This is my to do list app developed in JavaScript, html and css",
+    "main": "index.html",  
+    "scripts": {
+      
+    },
+    "dependencies": {}  
+  }
+  

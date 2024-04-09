@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do's</title>
+    <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS file -->
+</head>
+<body>
+   <section class="container">
+    <div class="heading">
+        <img src="DSC_0027.JPG" alt="heading__img" height="100"> <!-- Image for heading -->
+        <h1 class="heading__title">To-Do Tasks</h1> <!-- Title for the to-do list -->
+    </div>
+    <form action="" class="form"> <!-- Form for adding new to-do tasks -->
+        <div>
+            <label for="todo" class="form__label">~ Today I need to ~</label> <!-- Label for input field -->
+            <input type="text"
+            class="form__input"
+            id="todo"
+            name="to-do"
+            size="30"
+            required> <!-- Input field for entering new tasks -->
+            <button class="button"><span>Submit</span></button> <!-- Submit button -->
+        </div>
+    </form>
+    <div>
+        <ul class="toDoList"> <!-- Unordered list to display the to-do tasks -->
+            <!-- To-do tasks will be dynamically added here -->
+        </ul>
+    </div>
+   </section> 
+   <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
