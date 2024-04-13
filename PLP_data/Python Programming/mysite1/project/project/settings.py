@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "static_precompiler",
 ]
 
 MIDDLEWARE = [
@@ -116,7 +117,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+STATICFILES_FINDERS = [
+    'static_precompiler.finders.StaticPrecompilerFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+# Adjust path if needed
+STATIC_PRECOMPILER_LOADER = 'static_precompiler.backends.less.LessCompiler'
+
+# Specify the directory where compiled static files will be stored
+STATIC_PRECOMPILER_ROOT = os.path.join(BASE_DIR, 'static_precompiled')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

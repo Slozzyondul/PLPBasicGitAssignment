@@ -17,8 +17,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from personal1.views import home_screen
+from personal1.views import about_screen
+from personal1.views import contact_screen
+from personal1.views import courses_screen
+from personal1.views import elements_screen
+from personal1.views import news_screen
+from personal1.views import instructors_screen
+from personal1.views import blog_screen
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", home_screen),
+    path("admin.html/", admin.site.urls),
+    path("index.html/", home_screen, name="home"),
+    path("about.html/", about_screen, name="about"),
+    path("contact.html/", contact_screen, name="contact"),
+    path("courses.html/", courses_screen, name="courses"),
+    path("elements/", elements_screen, name="elements"),
+    path("news.html/", news_screen, name="news"),
+    path("instructors.html/", instructors_screen, name="instructors"),
+    path("blog.html/", blog_screen, name="blog"),
 ]
