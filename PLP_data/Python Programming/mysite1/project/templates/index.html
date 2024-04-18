@@ -11,8 +11,6 @@
 <link rel="stylesheet" type="text/css" href="{% static "css/main_styles.css" %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static "css/responsive.css" %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-<link rel="stylesheet/less" type="text/less" href="{% static 'less/styles.less' %}">
 
 
 <link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}">
@@ -163,7 +161,34 @@
 				<!-- Slider Item -->
 				<div class="owl-item">
 					<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-					<div class="home_slider_background" style="background-image:url(images/index.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url({% static 'images/index.jpg' %})"></div>
+
+					<div class="home_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content text-center">
+										<div class="home_logo"><img src="{% static 'images/home_logo.png' %}" alt=""></div>
+										<div class="home_text">
+											<div class="home_title">Complete Online Courses</div>
+											<div class="home_subtitle">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>
+										</div>
+										<div class="home_buttons">
+											<div class="button home_button"><a href="#">learn more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+											<div class="button home_button"><a href="#">see all courses<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<!-- Background image artist https://unsplash.com/@benwhitephotography -->
+					<div class="home_slider_background" style="background-image:url({% static 'images/index.jpg' %})"></div>
+
 					<div class="home_container">
 						<div class="container">
 							<div class="row">
@@ -189,32 +214,8 @@
 				<div class="owl-item">
 					<!-- Background image artist https://unsplash.com/@benwhitephotography -->
 					<div class="home_slider_background" style="background-image:url(images/index.jpg)"></div>
-					<div class="home_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_content text-center">
-										<div class="home_logo"><img src="{% static 'images/home_logo.png' %}" alt=""></div>
-										<div class="home_text">
-											<div class="home_title">Complete Online Courses</div>
-											<div class="home_subtitle">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>
-										</div>
-										<div class="home_buttons">
-											<div class="button home_button"><a href="#">learn more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-											<div class="button home_button"><a href="#">see all courses<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					<div class="home_container"><div class="home_slider_background" style="background-image:url({% static 'images/index.jpg' %})"></div>
 
-				<!-- Slider Item -->
-				<div class="owl-item">
-					<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-					<div class="home_slider_background" style="background-image:url(images/index.jpg)"></div>
-					<div class="home_container">
 						<div class="container">
 							<div class="row">
 								<div class="col">
@@ -269,7 +270,8 @@
 							</div>
 							<div class="col-lg-6 featured_col">
 								<!-- Background image artist https://unsplash.com/@jtylernix -->
-								<div class="featured_background" style="background-image:url(images/featured.jpg)"></div>
+								<div class="featured_background" style="background-image:url({% static 'images/featured.jpg' %})"></div>
+
 							</div>
 						</div>
 					</div>
@@ -625,7 +627,12 @@
 
 						<!-- News Post -->
 						<div class="news_post d-flex flex-row align-items-start justify-content-start">
-							<div><div class="news_post_image"><img src="images/news_4.jpg" alt="https://unsplash.com/@jtylernix"></div></div>
+							<div>
+								<div class="news_post_image">
+									<img src="{% static 'images/news_4.jpg' %}" alt="https://unsplash.com/@jtylernix">
+								</div>
+							</div>
+							
 							<div class="news_post_body">
 								<div class="news_post_date">April 02, 2018</div>
 								<div class="news_post_title"><a href="news.html">Books, Kindle or tablet?</a></div>
@@ -648,8 +655,9 @@
 					<div class="video_container_outer">
 						<div class="video_container">
 							<!-- Video poster image artist: https://unsplash.com/@annademy -->
-							<video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/5_MRXyYjHDk"}], "youtube": { "iv_load_policy": 1 } }'>
+							<video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "{% static "images/video.jpg" %}", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/5_MRXyYjHDk"}], "youtube": { "iv_load_policy": 1 } }'>
 							</video>
+							
 						</div>
 					</div>
 				</div>
@@ -774,7 +782,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="{% static 'js/Youtube.min.js' %}"></script>
 <script src="{% static 'js/parallax.min.js' %}"></script>
 <script src="{% static 'js/custom.js' %}"></script>
-<script src="{% static 'js/less.min.js' %}"></script>
-
 </body>
 </html>

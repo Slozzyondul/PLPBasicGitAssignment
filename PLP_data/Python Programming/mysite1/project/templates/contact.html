@@ -8,11 +8,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Elearn project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/video-js.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact_responsive.css' %}">
+
 </head>
 <body>
 
@@ -60,18 +61,19 @@
 							<div class="logo_container">
 								<a href="#">
 									<div class="logo_content d-flex flex-row align-items-end justify-content-start">
-										<div class="logo_img"><img src="images/logo.png" alt=""></div>
+										<div class="logo_img"><img src="{% static 'images/logo.png' %}" alt=""></div>
+
 										<div class="logo_text">learn</div>
 									</div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
-									<li><a href="index.html">home</a></li>
-									<li><a href="about.html">about us</a></li>
-									<li><a href="courses.html">courses</a></li>
-									<li><a href="news.html">news</a></li>
-									<li class="active"><a href="contact.html">contact</a></li>
+									<li><a href="{% url 'home' %}">home</a></li>
+									<li><a href="{% url 'about' %}">about us</a></li>
+									<li><a href="{% url 'courses' %}">courses</a></li>
+									<li><a href="{% url 'news' %}">news</a></li>
+									<li class="active"><a href="#">contact</a></li>
 								</ul>
 								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
@@ -147,7 +149,8 @@
 
 	<div class="home">
 		<!-- Background image artist https://unsplash.com/@thepootphotographer -->
-		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
+		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/contact.jpg' %}" data-speed="0.8"></div>
+
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
@@ -181,7 +184,8 @@
 									<div class="logo_container">
 										<a href="#">
 											<div class="logo_content d-flex flex-row align-items-end justify-content-start">
-												<div class="logo_img"><img src="images/logo.png" alt=""></div>
+												<div class="logo_img"><img src="{% static 'images/logo.png' %}" alt=""></div>
+
 												<div class="logo_text">learn</div>
 											</div>
 										</a>
@@ -261,7 +265,8 @@
 						<div class="logo_container">
 							<a href="#">
 								<div class="logo_content d-flex flex-row align-items-end justify-content-start">
-									<div class="logo_img"><img src="images/logo.png" alt=""></div>
+									<div class="logo_img"><img src="{% static 'images/logo.png' %}" alt=""></div>
+
 									<div class="logo_text">learn</div>
 								</div>
 							</a>
@@ -335,12 +340,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/easing.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/contact.js"></script>
+<script src="{% static 'js/contact.js' %}"></script>
+
 </body>
 </html>
