@@ -1,8 +1,4 @@
 # I COMMENTED OUT THE MYSQL LINES THEN ADDED MYSQLITE3 AND TESTED IT ON KALI LINUX
-#how to run
-navigate to server.js dirctory
-run └─$ node server.js
-go to http://localhost:3306/ 
 
 # simple-student-mgmt
 ## 1. Setup MySQL Database:
