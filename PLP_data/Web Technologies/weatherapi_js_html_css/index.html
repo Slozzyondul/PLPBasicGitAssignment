@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <form action="">
-        <label for="new_user">username: </label>
-        <input type="text" id="new_user" name="new_user" placeholder="input your name here: ">
-
-
-        <label for="new_user">password: </label>
-        <input type="text" id="new_user" name="new_user" placeholder="input your name here: " aria-describeby="password-hint">
+    <fieldset class="details">
+        <form action="">
+            <label for="new_user">username: </label>
+            <input type="text" id="new_user" name="new_user" placeholder="input your name here: ">
+    
+    
+            <label for="new_user">password: </label>
+            <input type="text" id="new_user" name="new_user" placeholder="input your name here: " aria-describeby="password-hint">
+            
+            <div id="password-hint">
+                Pasword must be at least 8 characters long!
+            </div>
         
-        <div id="password-hint">
-            Pasword must be at least 8 characters long!
+             <!-- submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+    <fieldset class="details">
+        <div class="container">
+            <h1>wether details</h1>
+            <input type="text" id="locaionInput" placeholder="enter city">
+            <button id="searchButton">search</button>
+            <div class="weather-info">
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+            
         </div>
     
-         <!-- submit button -->
-        <button type="submit">Submit</button>
-    </form>
-    
+    </fieldset>
+    <script src="script.js   1"></script>
 </body>
-<footer>
-    <h6>copyright {{link}}</h6>
-</footer>
+<fieldset class="details">
+    <footer>
+        <h6>copyright {{link}}</h6>
+        </footer>
+</fieldset>
 </html>
