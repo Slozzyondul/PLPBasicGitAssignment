@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "605773344788",
+    "project_id": "solo-tasks-6407b",
+    "storage_bucket": "solo-tasks-6407b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605773344788:android:66b6fb7925f3676b9ff701",
+        "android_client_info": {
+          "package_name": "com.Solo.Tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB30F0XVuDYJlg_e0yoKWyGhpMi5r3j1r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605773344788:android:25c83f7504ab317b9ff701",
+        "android_client_info": {
+          "package_name": "com.example.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB30F0XVuDYJlg_e0yoKWyGhpMi5r3j1r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
