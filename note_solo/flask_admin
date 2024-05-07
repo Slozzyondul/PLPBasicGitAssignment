@@ -1,0 +1,12 @@
+pip install flask-admin
+pip install  flask-sqlalchemy
+
+CREATING THE SQL DATABASE(admin_db)
+1. sqlite3 admin_db.db
+
+
+create a class for users in app.py then start it on terminal
+call pythton in the terminal
+in python:
+1.from app import db
+2. db.create_all()

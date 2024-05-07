@@ -1,0 +1,4 @@
+linux containers
+Create a directory, e.g. container_intro: = mkdir container_intro
+mkdir container_intro/usr
+cp /

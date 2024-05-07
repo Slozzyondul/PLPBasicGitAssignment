@@ -1,0 +1,4 @@
+Ctrl + k + Ctrl + T = open theme options in visualcode linux
+
+onboard = laptop screen keyboard
+

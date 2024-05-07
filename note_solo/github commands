@@ -1,0 +1,233 @@
+git config --global user.name "Slozzyondul"
+git config --global user.email "solomonondula.com"
+
+git remote add origin https://github.com/Slozzyondul/bazeng.git
+
+github generated token for updating repo = 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
+
+#pushing updates to the github repository
+git remote set-url origin https://Slozzyondul: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@github.com/Slozzyondul/bazeng.git
+git push -u origin main
+
+
+git clone https://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@github.com/Kimulu/VeggieVista.git
+
+
+new token(github) = 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
+
+chatgpt api key = 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
+
+Activate virtual environment = source env/bin/activate
+
+#pushing changes to github repository
+1.git add .
+2.git commit -m "Initial commit1"
+3.git push origin main
+
+
+https://github.com/search?q=music+school+management+system&type=repositories = school management system
+
+python3 -m venv env = create a virtual environment called env
+
+source env/bin/activate = activating the created env environment(linux)
+python app.py = starting the app in the activated env environment(called app.py) flask
+deactivate = leaving the virtual environment to save resources and memory on the local machine.
+
+django-admin startproject myproject = django will create a folder called  myproject with all its dependencies
+
+python manage.py runserver = start server in django
+
+python manage.py collectstatic = update static files
+
+
+python manage.py startapp myapp = creating an app to work with
+
+
+https://github.com/flask-admin/flask-admin/tree/master/flask_admin
+clone this repository for flask admin detailed
+
+push python assingment week 1 to github
+
+
+https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#example
+
+/home/solo/Desktop/PLP_data/Web Technologies/images/
+
+
+11001259
+SBL5RCJO17
+YWRDBNL
+
+TROUBLE SHOOTING COMMANDS (Networking Basics)
+
+solomon = mysqlworkbench password
+
+CREATE TABLE IF NOT EXISTS test (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    rank INTEGER NOT NULL
+);
+
+
+python manage.py runserver --insecure = when serving static files  in dev mode
+
+In order to run your application, type:
+
+  $ cd testing_app
+  $ flutter run
+flutter create testing_app
+
+
+
+
+################javascript and sqlite3###########
+
+# I COMMENTED OUT THE MYSQL LINES THEN ADDED MYSQLITE3 AND TESTED IT ON KALI LINUX
+#how to run
+navigate to server.js dirctory
+run └─$ node server.js
+go to http://localhost:3306/
+
+# simple-student-mgmt
+## 1. Setup MySQL Database:
+
+#mariaDB COMMANDS
+sudo mysql -u root = start mariadb
+sudo systemctl status mariadb
+sudo systemctl start mariadb
+sudo systemctl restart mariadb
+sudo systemctl enable mariadb
+
+
+#CREATE DATABASE database_name;
+#SHOW DATABASES;
+#USE database_name;
+#SHOW TABLES;
+#DESCRIBE table_name;
+
+#sudo netstat -tuln | grep 3306
+#sudo lsof -i:3306
+#sudo kill 737026
+
+First, create a MySQL database named student_management_system.
+```bash
+CREATE DATABASE student_management_system;
+```
+
+Create a table named students having the following fields:
+```bash
+    id (INT, AUTO_INCREMENT, PRIMARY KEY)
+    name (VARCHAR)
+    age (INT)
+    grade (VARCHAR)
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    grade VARCHAR(255) NOT NULL
+);
+```
+
+## 2. Setup Node.js Project:
+
+Create a new folder for your project and initialize it with npm:
+```bash
+npm init -y
+```
+Install required dependencies:
+
+```bash
+npm install express mysql body-parser
+```
+
+## 3. Create HTML Interface:
+
+Create an index.html file for the user interface.
+
+## 4. Create CSS Styles:
+
+Create a styles.css file to style your HTML interface as needed.
+
+## 5. Create JavaScript Functionality:
+
+Create a script.js file to handle client-side interactions.
+
+## 6. Create Node.js Server:
+
+Create a server.js file to handle server-side logic.
+
+## 7. Run the Application:
+
+Start the Node.js server:
+
+```bash
+node server.js
+```
+
+Now, you can access your student management system by opening http://localhost:3000 in your web browser.
+
+
+sudo netstat -tuln | grep 3306
+sudo lsof -i:3306
+sudo kill 737026
+
+sudo apt update
+sudo apt install nodejs
+
+npm -v
+
+
+mkdir my-node-project
+cd my-node-project
+
+npm init
+
+
+npm install express
+
+
+const express = require('express');
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+app.listen(port, () => {
+    console.log(`Server is listening at http://localhost:${port}`);
+});
+
+
+node app.js
+
+
+
+
+pip install django-static-precompiler
+
+
+
+
+flutter hackathon
+create, read, update, delete
+implement calender for tasks due dates
+try adding a database
+
+
+try adding android and ios emulator on vs code
+using API
+
+
+nano -R ~/.bashrc = opening a file with right permissions
+
+To recompile executables, first run `dart pub global deactivate flutterfire_cli`.
+
+
+
+└─$ grep -rn "the system cannot find he path specified"
+
+dockerd in docker client
+
+
+
+ctr shi p

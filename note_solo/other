@@ -1,0 +1,44 @@
+#create a table called franchise
+-- create database franchise
+
+#ensuring am in the correct database
+-- use franchise
+
+#creating the table customer with columns
+-- create table Customer(
+-- customerID int primary key,
+-- name varchar(255),
+-- email varchar(255),
+-- phone varchar(15)
+-- )
+
+#inserting data
+-- insert into Customer(CustomerID, Name, Email, Phone)
+-- values
+-- (101, 'solo', 'solo@we.com', '9090808');
+
+#create table membership
+create table membership(
+MambershipID int primary key,
+CustomerID
+-- )
+
+sudo ./unetbootin-linux64-700.bin = Run UNetbootin
+
+wine uninstaller.exe
+
+
+conne ting to mysqlserver
+During installation, a randomly generated password is created for the MySQL root user. To retrieve it, issue the following command:
+
+sudo mysql-strict.rootpass To update this password, start by logging to the MySQL server:
+
+mysql-strict.mysql -u root -p Afterwards, execute the following SQL statement (replace YOUR_NEW_PASS below with a strong password):
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'YOUR_NEW_PASS'; ---
+
+This is a community-developed snap, and is not endorsed or supported by Oracle or Canonical.
+
+
+
+sd

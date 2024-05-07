@@ -1,0 +1,36 @@
+To connect to your database use these details
+
+Server: sql8.freemysqlhosting.net
+Name: sql8682576
+Username: sql8682576
+Password: KfgvCyW3yN
+Port number: 3306
+
+databasestring =mysql://sql8682576:KfgvCyW3yN@sql8.freemysqlhosting.net/sql8682576
+
+
+CREATE TABLE test (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL,
+    age INTEGER,
+    birthday DATETIME
+);
+INSERT INTO students (username, email) VALUES ('user1', 'user1@example.com');
+INSERT INTO students (username, email) VALUES ('user2', 'user2@example.com');
+
+ADDING  A USER NAMED "ondul" IN THE USERS TABLE = sqlite> insert into users (username) values ('ondul');
+
+dropping old database = db.drop_all()
+uodating the new database after changes in the app.py = db.create_all()
+
+##CREATING TABLE NAMED 'comment' IN SQL TERMINAL WITH FOREIGN KEY
+CREATE TABLE comment (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    comment_text TEXT NOT NULL,
+    user_id INTEGER
+    FOREIGN KEY (id) REFERENCES users1(id)
+
+);
+
+

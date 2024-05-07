@@ -1,0 +1,30 @@
+enhance these templates with forms, input fields, or any other content you want to display on these pages.
+
+
+
+
+Unit Tests: Write unit tests for your functions to ensure they behave as expected under different scenarios. This will help catch any bugs and verify the correctness of your code.
+
+Refactoring: Look for opportunities to refactor your code to make it more modular and reusable. For example, you could separate the database operations into separate functions or classes.
+
+
+
+CREATE TABLE players (
+    is INTEGER PRIMARY KEY,
+    name TEXT NOT NULL
+);
+
+CREATE TABLE ranks (
+    player_id INTEGER PRIMARY KEY,
+    rank INTEGER NOT NULL,
+    FOREIGN KEY (player_id) REFERENCES players(is)
+);
+
+CREATE TRIGGER add_player_to_ranks
+AFTER INSERT ON players
+BEGIN
+    INSERT INTO ranks (player_id, rank)
+    VALUES (NEW.is, 100);
+END;
+
+

@@ -1,0 +1,93 @@
+/snap/bin/snap-store
+sudo systemctl start bluetooth
+
+
+ls= list
+pwd= print working directory/full path of working directory
+cd=change directory
+mkdir=make directoyy
+rmdir=remove directory
+touch= create new file/ time stamp 
+cp= copy
+mv= move
+rm=remove
+cat= reads the file/content
+wget=download data
+man= manual
+history= log info
+diff= length
+alias= repetitive comands, create an elias to automate 
+
+"float-end price card-title pull-right"
+
+"description card-text"
+
+Conditional stametents
+if the condition id true:
+    Perform these set of actions;
+if this condition is true:
+    Perform another set of operations;
+if this condition is false:
+    Dont do anything
+
+Control flow
+
+if condition
+    #Do this
+    print"This condition is true"
+
+elif condition ! =True:
+    #Do this instead
+    print">This condition isnt true"
+else:
+    perform a default action if none of the conditions are met
+    print("The condition isnt true or false")
+
+
+module = a compilation of functions that you call in order to perform certain tasks, always imported.
+
+
+class is differne t from functions because class drfinitions sre exected before we see the actual effect
+
+DDL(Data Defiinition Language)- used for creating and defining schemas of databases
+1 CREATE
+2 ALTER
+3 DROP
+
+Data manipulation language
+SELECT
+UPDATE
+DELETE
+
+https://www.google.com/recaptcha/admin/create#list = recaptcha signup link
+
+#inline validators
+
+#converting pdf to excel
+
+wine PacketTracer-7.3.0-win64-setup.exe = install packet tracer using wine
+
+pip freeze > requirements.txt
+
+
+ls
+ls -i = detailed listing
+ls -t = sort by time
+ls -S = sort by size
+ls -r = reverse sorting
+cd- = going back too the original folder directly
+
+mkdir = craezte new folder
+rmdir = delete folder
+touch = crate new black file
+rm = delete
+rm* = removing all files in a folder
+nano = edit files
+vi = edit file with vim
+cat = display content on the screen
+more = display content slowly
+
+Ctrl + U: Clears the line from the cursor point back to the beginning.
+Ctrl + A: Moves the cursor to the beginning of the line.
+Ctrl + E: Moves the cursor to the end of the line.
+Ctrl + R: Allows you to search through the previous commands.
