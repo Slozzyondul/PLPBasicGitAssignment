@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose(); //importing sqlite3
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3306;
+const port = 3000;
 
 //connect to sqlite3 database
 const db = new sqlite3.Database('/home/solo/Desktop/PLP_data/Databases/simple-student-mgmt/student_management_system.db', (err) => {
