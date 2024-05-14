@@ -16,7 +16,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from project.views import home_screen
+from project.views import about_screen
+from project.views import appointment_screen
+from project.views import call_to_action_screen
+from project.views import classes_screen
+from project.views import contact_screen
+from project.views import facility_screen
+from project.views import team_screen
+from project.views import testimonial_screen
+from project.views import error_screen
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home_screen, name=""),
+    path('about/', about_screen, name="about"),
+    path('appointment/', appointment_screen, name="appointment"),
+    path('call-to-action/', call_to_action_screen, name="call-to-action"),
+    path('classes/', classes_screen, name="classes"),
+    path('contact/', contact_screen, name="contact"),
+    path('facility/', facility_screen, name="facility"),
+    path('team/', team_screen, name="team"),
+    path('testimonial/', testimonial_screen, name="testimonial"),
+    path('404/', error_screen, name="404"),
 ]
