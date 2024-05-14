@@ -32,6 +32,7 @@ from project.views import error_screen
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_screen, name=""),
+    path('index/', home_screen, name="index"),
     path('about/', about_screen, name="about"),
     path('appointment/', appointment_screen, name="appointment"),
     path('call-to-action/', call_to_action_screen, name="call-to-action"),
