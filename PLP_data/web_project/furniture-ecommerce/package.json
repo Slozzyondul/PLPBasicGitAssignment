@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
+    "mariadb": "^3.3.0",
     "mysql2": "^3.9.7",
     "sequelize": "^6.37.3"
   }

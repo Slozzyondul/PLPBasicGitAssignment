@@ -1,16 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
+// scripts.js
+document.addEventListener('DOMContentLoaded', () => {
     fetch('/api/products')
         .then(response => response.json())
-        .then(products => {
-            const productsContainer = document.getElementById('products');
-            products.forEach(product => {
-                const productElement = document.createElement('div');
-                productElement.className = 'product';
-                productElement.innerHTML = `
-                    <h2>${product.name}</h2>
-                    <p>Price: $${product.price}</p>
+        .then(data => {
+            const productsSection = document.getElementById('products');
+            data.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
+                productDiv.innerHTML = `
+                    <h3>${product.name}</h3>
+                    <p>Price: $${product.price.toFixed(2)}</p>
                 `;
-                productsContainer.appendChild(productElement);
+                productsSection.appendChild(productDiv);
             });
-        });
+        })
+        .catch(error => console.error('Error fetching products:', error));
 });

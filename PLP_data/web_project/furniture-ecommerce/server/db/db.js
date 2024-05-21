@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
-const sequelize = new Sequelize('furniture_ecommerce', 'username', 'password', {
+const sequelize = new Sequelize('ecommerce', 'solo1', 's', {
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mariadb', // Ensure this is "mariadb"
 });
 
 sequelize.sync()
