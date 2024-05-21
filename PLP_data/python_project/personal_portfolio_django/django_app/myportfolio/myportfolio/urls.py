@@ -18,15 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from project.views import home_screen
 from project.views import about_screen
-from project.views import appointment_screen
-from project.views import call_to_action_screen
-from project.views import classes_screen
 from project.views import contact_screen
-from project.views import facility_screen
-from project.views import team_screen
-from project.views import testimonial_screen
-from project.views import error_screen
-
+from project.views import blog_screen
+from project.views import cart_screen
+from project.views import checkout_screen
+from project.views import services_screen
+from project.views import shop_screen
+from project.views import thankyou_screen
 
 
 urlpatterns = [
@@ -34,12 +32,11 @@ urlpatterns = [
     path('', home_screen, name=""),
     path('index/', home_screen, name="index"),
     path('about/', about_screen, name="about"),
-    path('appointment/', appointment_screen, name="appointment"),
-    path('call-to-action/', call_to_action_screen, name="call-to-action"),
-    path('classes/', classes_screen, name="classes"),
     path('contact/', contact_screen, name="contact"),
-    path('facility/', facility_screen, name="facility"),
-    path('team/', team_screen, name="team"),
-    path('testimonial/', testimonial_screen, name="testimonial"),
-    path('404/', error_screen, name="404"),
+    path('blog/', blog_screen, name="blog"),
+    path('cart/', cart_screen, name="cart"),
+    path('checkout/', checkout_screen, name="checkout"),
+    path('services/', services_screen, name="services"),
+    path('shop/', shop_screen, name="shop"),
+    path('thankyou/', thankyou_screen, name="thankyou"),
 ]

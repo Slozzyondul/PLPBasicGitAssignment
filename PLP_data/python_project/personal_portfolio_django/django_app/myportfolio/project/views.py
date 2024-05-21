@@ -11,19 +11,19 @@ def about_screen(request):
     return render (request, 'about.html', {})
 
 
-def appointment_screen(request):
+def blog_screen(request):
     print(request.headers)
-    return render (request, 'appointment.html', {})
+    return render (request, 'blog.html', {})
 
 
-def call_to_action_screen(request):
+def cart_screen(request):
     print(request.headers)
-    return render (request, 'call-to-action.html', {})
+    return render (request, 'cart.html', {})
 
 
-def classes_screen(request):
+def checkout_screen(request):
     print(request.headers)
-    return render (request, 'classes.html', {})
+    return render (request, 'checkout.html', {})
 
 
 def contact_screen(request):
@@ -31,22 +31,17 @@ def contact_screen(request):
     return render (request, 'contact.html', {})
 
 
-def facility_screen(request):
+def services_screen(request):
     print(request.headers)
-    return render (request, 'facility.html', {})
+    return render (request, 'services.html', {})
 
 
-def team_screen(request):
+def shop_screen(request):
     print(request.headers)
-    return render (request, 'team.html', {})
+    return render (request, 'shop.html', {})
 
 
-def testimonial_screen(request):
+def thankyou_screen(request):
     print(request.headers)
-    return render (request, 'testimonial.html', {})
-
-
-def error_screen(request):
-    print(request.headers)
-    return render (request, '404.html', {})
+    return render (request, 'thankyou.html', {})
 
