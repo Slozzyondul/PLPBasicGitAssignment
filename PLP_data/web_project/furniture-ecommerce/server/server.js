@@ -1,9 +1,8 @@
 const express = require('express');
 const path = require('path');
-const productRoutes = require('./routes/productRoutes'); // Ensure correct path to productRoutes
+const productRoutes = require('./routes/productRoutes');
 const app = express();
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
 // Serve static files from the 'client' directory
@@ -14,8 +13,15 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'index.html'));
 });
 
-// Register the product routes
+// Define API routes
 app.use('/api/products', productRoutes);
+
+app.post('/api/checkout', (req, res) => {
+    const { name, address, email, cart } = req.body;
+    // Here you would handle the checkout process (e.g., saving the order to the database, processing payment, etc.)
+    console.log('Order received:', { name, address, email, cart });
+    res.status(201).json({ message: 'Order placed successfully!' });
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
